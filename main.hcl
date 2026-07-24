@@ -15,6 +15,10 @@ resource "lab" "main" {
   }
 
   settings {
+    idle {
+      enabled = false
+      timeout = "10m"
+    }
     timelimit {
       duration = "1h"
     }
